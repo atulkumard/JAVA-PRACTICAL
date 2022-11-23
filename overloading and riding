@@ -1,0 +1,31 @@
+Overloading:-
+class Adder{  
+static int add(int a, int b){return a+b;}  
+static double add(double a, double b){return a+b;}  
+}  
+class TestOverloading2{  
+public static void main(String[] args){  
+System.out.println(Adder.add(11,11));  
+System.out.println(Adder.add(12.3,12.6));  
+}} 
+
+overriding:-
+class Animal {
+   public void displayInfo() {
+      System.out.println("I am an animal.");
+   }
+}
+
+class Dog extends Animal {
+   @Override
+   public void displayInfo() {
+      System.out.println("I am a dog.");
+   }
+}
+
+class Main {
+   public static void main(String[] args) {
+      Dog d1 = new Dog();
+      d1.displayInfo();
+   }
+}  
