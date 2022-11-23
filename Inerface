@@ -1,0 +1,41 @@
+1. Teacher
+package java_interface;
+
+public interface Teacher {
+	void assignment();
+	void practical();
+	int marks();
+
+}
+2. Student
+package java_interface;
+import java.util.Scanner;
+public class Student implements Teacher {
+	public void assignment() {
+		System.out.println("I am doing Assignment");
+		
+	}
+	public void practical() {
+		System.out.println("I am doing Practical ");
+		
+	}
+	public int marks() {
+		return 9;
+	}
+
+}
+3. Test 
+package java_interface;
+
+public class Test {
+	public static void main(String[] args) {
+		Student s1= new Student();
+		s1.assignment();
+		s1.practical();
+		System.out.println("Marks obtained by Student is: " + s1.marks());
+	}
+
+}
+
+
+
